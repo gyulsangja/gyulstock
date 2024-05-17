@@ -35,7 +35,7 @@ const Login = () => {
     };
 
       const handleLogin = ()=>{
-        axios.post('http://localhost:80/login', userData)
+        axios.post('http://localhost:3500/login', userData)
             .then((res)=>{
                 console.log(res.data)
                 if(res.data.success){

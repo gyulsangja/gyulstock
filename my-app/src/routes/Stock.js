@@ -59,7 +59,7 @@ const Stock = () => {
             stock_isinCd: id,
             user_id: userData.user_id
         }
-        axios.post('http://localhost:80/stock', sendData)
+        axios.post('http://localhost:3500/stock', sendData)
             .then((res) => {
                 if (res.data.success) {
                     dispatch(interestedStocksHandle(res.data.data));
