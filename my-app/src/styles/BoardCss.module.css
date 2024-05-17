@@ -1,0 +1,38 @@
+.list{padding: 30px;font-size: 15px;}
+
+.list .btnWrap{padding: 12px;background: #f3f6fc;border-radius: 12px;}
+.list.dark .btnWrap{background-color: #111;}
+.list .btnWrap span{display: block;border-radius: 30px;background: #d4e190;padding: 14px 18px;font-weight: bold;cursor: pointer;}
+.list.dark .btnWrap span{background: #666;}
+.list ul{margin: 20px 0;}
+.list ul li{padding: 25px;border-radius: 12px;background: #f3f6fc;margin: 20px 0;}
+.list.dark ul li{background-color: #111;}
+.list ul li .top{display: flex;flex-direction: row;justify-content: space-between;margin-bottom: 15px;}
+.list ul li .top span{cursor: pointer;}
+.list ul li .top h4{font-weight: bold;font-size: 1.1em;margin-bottom: 4px;}
+.list ul li .content p{margin-bottom: 15px;}
+.list ul li .content .imgWrap img{width: 25%; height: 250px;object-fit: cover;cursor: pointer;}
+
+
+@media screen and (max-width:900px) {
+    .list{padding: 9px;}
+    .list ul li .content .imgWrap img{height: 160px;}
+    
+}
+@media screen and (max-width:750px) {
+    .write .black .boardWrap{width: 60%;}
+}
+
+@media screen and (max-width:550px) {
+    .list{font-size: 14px;}
+    .list ul li{padding: 12px;}
+    .list ul li .content .imgWrap img{width: 50%;height: 140px;}
+
+    .write{font-size: 14px;}
+    .write .black .boardWrap{width: calc(100% - 54px);padding: 12px 18px;margin-bottom: 6px;}
+    .write .black .boardWrap .top{font-size: 1.4em;margin-bottom: 6px;}
+    .write .black .boardWrap .content .name{padding: 8px;margin-bottom: 6px;}
+    .write .black .boardWrap .content .name input{padding: 14px;border-radius: 15px;}
+    .write .black .boardWrap .file{padding: 8px;}
+    .write .black .boardWrap button{padding: 8px 0;}
+}

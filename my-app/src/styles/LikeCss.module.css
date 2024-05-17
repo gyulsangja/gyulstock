@@ -1,0 +1,30 @@
+.redbg{background: #8f0404;color: #fff;}
+.bluebg{background: #0d0dab;color: #fff;}
+.red{color: #8f0404;}
+.blue{color: #0d0dab;}
+
+.title{padding: 50px 0;font-weight: bold;font-size: 28px;}
+.like{display: flex;flex-direction: row;justify-content: space-between;flex-wrap: wrap;}
+.like li{width: 45%;background: #efefef;border-radius: 20px;overflow: hidden;margin: 30px 0;}
+.like li .top{padding: 20px;display: flex;flex-direction: row;justify-content: space-between;}
+.like li .top .left span{margin: 0 10px;}
+.like li .top .btn span{margin: 0 10px;cursor: pointer;}
+.like li .content{padding: 20px;display: flex;flex-direction: row;justify-content: space-around;font-weight: bold;font-size: 18px;text-align: center;}
+.like li .content dl dt{font-size: 2.2em;}
+.like li .content dl dd{margin: 10px 0;}
+.like li .content .name{display: flex;flex-direction: column;justify-content: center;font-size: 1.6em;}
+.like li .stock{padding: 20px;}
+
+@media screen and (max-width:900px){
+    .title{padding: 25px 0;font-size: 18px;text-align: center;}
+    .like li .content{font-size: 14px;}
+    .like li .content dl dt{font-size: 1.8em;}
+}
+
+@media screen and (max-width:550px){
+    .like li{width: 100%;margin: 10px 0;}
+    .like li .top{padding: 12px;}
+    .like li .content{padding: 12px;}
+    .like li .content dl dd{margin: 6px 0;}
+}
+

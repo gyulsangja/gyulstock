@@ -1,0 +1,44 @@
+.red{color: #8f0404;}
+.redbg{background: #8f0404;color: #fff;}
+.blue{color: #0d0dab;}
+.bluebg{background: #0d0dab;color: #fff;}
+.dark .red{color: #a70b0b;}
+.dark .redbg{background: #a70b0b;color: #fff;}
+.dark .blue{color: #0064ff;}
+.dark .bluebg{background: #0064ff;color: #fff;}
+
+.sec1 .top{border-top-left-radius: 30px;border-top-right-radius: 30px;padding: 20px;display: flex;flex-direction: row;justify-content: space-between;}
+.sec1 .top ul{display: flex;flex-direction: row;}
+.sec1 .top ul li{margin: 0 10px;}
+.sec1 .top .btn span{margin: 0 10px;cursor: pointer;}
+.sec1 .tit{display: flex;flex-direction: row;justify-content: space-around;background: #efefef;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;padding: 30px;font-weight: bold;font-size: 28px;text-align: center;}
+.sec1 .tit.dark{background: #000;}
+.sec1 .tit .name{display: flex;flex-direction: column;justify-content: center;font-size: 2em;}
+.sec1 .tit dl dt{font-size: 3em;}
+.sec1 .tit dl dd{margin: 10px 0;}
+
+.sec2.dark{background-color: #eee;}
+.sec3 table{width: 100%;border-collapse: collapse;}
+.sec3 table th{border-top: 2px solid #333;padding: 10px;background: #f3f6fc;border-left: 1px solid #333;border-right: 1px solid #333;border-bottom: 1px solid #333;font-weight: bold;}
+.sec3.dark table th{background: #333;}
+.sec3 table td{padding: 10px;border-left: 1px solid #333;border-right: 1px solid #333;border-bottom: 1px solid #333;text-align: center;font-weight: bold;}
+.sec3 .more{margin: 30px auto;display: block;padding: 15px 30px;background: #d4e190;border: none;border-radius: 15px;cursor: pointer;font-weight: bold;transition: all .2s cubic-bezier(.2,0,0,1);}
+.sec3 .more:hover{background: #ffb059;}
+
+@media screen and (max-width:900px) {
+    .sec2{overflow-x: scroll;}
+    .sec2 .chartWrap{min-width: 700px;}
+}
+
+@media screen and (max-width:550px) {
+    .sec1 .top{padding: 8px;border-top-left-radius: 8px;border-top-right-radius: 8px;}
+    .sec1 .tit{font-size: 16px;padding: 8px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px}
+    .sec1 .tit dl dt{font-size: 2.5em;}
+    .sec1 .tit .name{font-size: 1.5em;}
+
+    
+
+    .sec3{overflow-x: scroll;}
+    .sec3 table th{padding: 6px;}
+    .sec3 table td{padding: 6px;}
+}

@@ -1,0 +1,10 @@
+.mySwiper{display: flex;flex-direction: column;}
+
+.mySwiper .swiper-wrapper{order: 2;}
+.mySwiper .swiper-pagination{display: flex;flex-direction: row; position: static;order: 1;border-bottom: 1px solid #bbb;box-sizing: border-box;}
+.mySwiper .swiper-pagination .swiper-pagination-bullet{display: block;width: fit-content;border-radius: 0;padding: 25px;margin: 0;background-color: transparent;opacity: 1;box-sizing: border-box;}
+.mySwiper .swiper-pagination .swiper-pagination-bullet-active{border-bottom: 4px solid #d4e190;}
+
+@media screen and (max-width:900px){
+    .mySwiper .swiper-pagination .swiper-pagination-bullet{padding: 16px;}
+}

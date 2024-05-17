@@ -1,0 +1,27 @@
+.write{font-size: 15px;display: none;}
+.write.on{display: block;}
+.write .black{position: fixed;top: 0;left: 0;background: #00000099;width: 100vw;height: 100vh;display: flex;flex-direction: column;justify-content: center;}
+.write .black .boardWrap{margin: 0 auto;width: 490px;background: #fff;border-radius: 30px;padding: 30px;}
+.write.dark .black .boardWrap{background: #666;}
+.write .black .boardWrap .top{line-height: 35px;font-size: 1.8em;font-weight: bold;display: flex;flex-direction: row;justify-content: space-between;border-bottom: 1px solid #bbb;margin-bottom: 10px;}
+.write .black .boardWrap .top span{cursor: pointer;}
+.write .black .boardWrap .content{margin-bottom: 10px;}
+.write .black .boardWrap .content .name{border-radius: 12px;background: #f3f6fc;padding: 12px;margin-bottom: 10px;}
+.write .black .boardWrap .content .name input{display: block;border-radius: 30px;background: #d4e190;padding: 14px 18px;font-weight: bold;border: none;}
+.write .black .boardWrap .content textarea{width: 94%;border: none;padding: 3%;background: #f3f6fc;border-radius: 12px;height: 250px;}
+.write .black .boardWrap .file{padding: 12px;border-radius: 12px;background: #f3f6fc;margin-bottom: 10px;}
+.write .black .boardWrap button{width: 100%;border: none;background: #d4e190;padding: 10px 0;border-radius: 30px;cursor: pointer;}
+
+@media screen and (max-width:750px) {
+    .write .black .boardWrap{width: 60%;}
+}
+
+@media screen and (max-width:550px) {
+    .write{font-size: 14px;}
+    .write .black .boardWrap{width: calc(100% - 54px);padding: 12px 18px;margin-bottom: 6px;}
+    .write .black .boardWrap .top{font-size: 1.4em;margin-bottom: 6px;}
+    .write .black .boardWrap .content .name{padding: 8px;margin-bottom: 6px;}
+    .write .black .boardWrap .content .name input{padding: 14px;border-radius: 15px;}
+    .write .black .boardWrap .file{padding: 8px;}
+    .write .black .boardWrap button{padding: 8px 0;}
+}

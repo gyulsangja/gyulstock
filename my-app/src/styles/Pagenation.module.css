@@ -1,0 +1,12 @@
+.pagenation{margin: 30px auto;width: fit-content;}
+.pagenation button{margin: 0 3px;background: transparent;border: none;cursor: pointer;padding: 8px;}
+.pagenation.dark button{color: #fff;}
+.pagenation button:hover, .pagenation .active{font-weight: bold;background: #d4e190;border-radius: 30px;transition: all .2s cubic-bezier(.2,0,0,1);}
+.pagenation.dark button:hover, .pagenation.dark .active{background: #666;}
+
+@media screen and (max-width:550px) {
+    .pagenation button{font-size: 12px;padding: 4px;margin: 0 1px;}
+    .pagenation button md-icon{
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+    }
+}

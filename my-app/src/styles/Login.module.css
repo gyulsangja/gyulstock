@@ -1,0 +1,10 @@
+.login {height: 100vh;}
+.login .welcome{height: 100vh;display: flex;flex-direction: column;justify-content: center;}
+.login .welcome h3{font-size: 24px;font-weight: bold;background: #d4e190;padding: 30px;border-radius: 20px;text-align: center;width: fit-content;margin: 0 auto;}
+
+.login .logout{display: flex;flex-direction: column;justify-content: center;height: 100vh;max-width: 600px;}
+.login .logout input{display: block;border: 0;line-height: 30px;border-top: 1px solid #333;border-bottom: 1px solid #333;margin-bottom: 30px;width: 100%;padding: 15px;}
+.login .logout .btn{text-align: center;}
+.login .logout button, .login .logout a{background: #d4e190; padding: 20px 25px;border-radius: 15px;border: 0;margin: 0 15px;cursor: pointer;transition: all .2s cubic-bezier(.2,0,0,1);}
+.login .logout button:hover, .login .logout a:hover{background: #ffb059;}
+.login .logout p{text-align: center;margin: 15px 0;}
