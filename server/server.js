@@ -21,8 +21,8 @@ app.listen(PORT, ()=>{
 app.use(express.static(path.join(__dirname, '/build')))
 
 app.get('/', (req, res)=>{
-    res.send('gyulstock')
-    // res.sendFile(path.join(__dirname, '/build', 'index.html'))
+    //res.send('gyulstock')
+    res.sendFile(path.join(__dirname, '/build', 'index.html'))
 })
 
 app.use('/login', require('./router/login.js'))
