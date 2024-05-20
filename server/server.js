@@ -18,11 +18,11 @@ app.listen(PORT, ()=>{
     console.log('server on ' + PORT)
 })
 
-app.use(express.static(path.join(__dirname, '../my-app/build')))
+app.use(express.static(path.join(__dirname, '/build')))
 
 app.get('/', (req, res)=>{
     //res.send('gyulstock')
-    res.sendFile(path.join(__dirname, '../my-app/build', 'index.html'))
+    res.sendFile(path.join(__dirname, '/build', 'index.html'))
 })
 
 app.use('/login', require('./router/login.js'))
