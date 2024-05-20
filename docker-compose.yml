@@ -1,0 +1,22 @@
+version: '3'
+services:
+  frontend-image:
+    build:
+      context: ./my-app
+    ports:
+      - "3000:3000"
+
+  backend-image:
+    build:
+      context: ./server
+    ports:
+      - "3500:3500"
+    environment:
+      - DB_HOST=db-mtj3c.pub-cdb.ntruss.com
+      - DB_USER=gyulgyul
+      - DB_PORT=3306
+      - DB_NAME=gyuldb
+      - DB_PWD=gyul3475\!@
+      - DB_ACKEY=vGlQYU5Is12Oaj3V9Gva
+      - DB_SEKEY=Zx4YoJAQjRzDZffVtyEq9MsW3jRwtJrXyWscUizE
+      - DB_BUCKET=gyulstorage
