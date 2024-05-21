@@ -7,7 +7,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 const PORT = process.env.PORT || 3500;
-const DB_USER = process.env.DB_USER;
 
 app.use(cors());
 app.use(cookieParser());
@@ -16,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.listen(PORT, ()=>{
-    console.log('server on ' + PORT + ' ' + DB_USER)
+    console.log('server on ' + PORT)
 })
 
 app.use(express.static(path.join(__dirname, '/build')))
