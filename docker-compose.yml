@@ -16,7 +16,7 @@ services:
       - DB_USER=gyulgyul
       - DB_PORT=3306
       - DB_NAME=gyuldb
-      - DB_PWD=gyul3475\!@
+      - DB_PWD=gyul3475@
       - DB_ACKEY=vGlQYU5Is12Oaj3V9Gva
       - DB_SEKEY=Zx4YoJAQjRzDZffVtyEq9MsW3jRwtJrXyWscUizE
       - DB_BUCKET=gyulstorage

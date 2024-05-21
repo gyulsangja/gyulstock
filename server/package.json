@@ -5,9 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "deploy": "pm2 start sever.js",
-    "stop": "pm2 kill"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
