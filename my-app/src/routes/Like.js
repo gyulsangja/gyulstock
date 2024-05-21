@@ -17,7 +17,7 @@ const Like = () => {
             stock_isinCd: isinCd,
             user_id: userData.user_id,
         }
-        axios.put(`http://localhost:3500/like`, sendData)
+        axios.put(`http://118.67.135.87/like`, sendData)
             .then((res) => {
                 if (res.data.success) {
                     dispatch(interestedStocksHandle(res.data.data));  

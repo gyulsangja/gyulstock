@@ -36,7 +36,7 @@ const Register = () => {
     };
 
       const handleLogin = ()=>{
-        axios.post('http://localhost:3500/register', userData)
+        axios.post('http://118.67.135.87/register', userData)
             .then((res)=>{
                 if(res.data.success === true){
                     const resultData = {

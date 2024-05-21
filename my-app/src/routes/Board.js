@@ -18,7 +18,7 @@ const Board = () => {
 
     const Navigate = useNavigate()
     
-    const loadingURL = 'http://gyulstock.ap-northeast-2.elasticbeanstalk.com/board'
+    const loadingURL = 'http://118.67.135.87/board'
     
     const axiosHandle = async (req, res) => {
         
