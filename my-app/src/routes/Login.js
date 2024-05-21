@@ -35,7 +35,7 @@ const Login = () => {
     };
 
       const handleLogin = ()=>{
-        axios.post('http://118.67.135.87/login', userData)
+        axios.post('http://118.67.135.87:3000/login', userData)
             .then((res)=>{
                 console.log(res.data)
                 if(res.data.success){

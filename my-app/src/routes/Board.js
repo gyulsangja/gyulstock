@@ -18,7 +18,7 @@ const Board = () => {
 
     const Navigate = useNavigate()
     
-    const loadingURL = 'http://118.67.135.87/board'
+    const loadingURL = 'http://118.67.135.87:3000/board'
     
     const axiosHandle = async (req, res) => {
         
