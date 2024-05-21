@@ -28,7 +28,7 @@ function App() {
   };
   
   const axiosHandle = async () => {
-    let currentDate = getYesterdayDate(); // 어제 날짜 가져오기
+    let currentDate = getYesterdayDate();
   
     try {
       while (true) {

@@ -53,7 +53,7 @@ const Board = () => {
     const deleteHandle = async (post_id) => {
         const postId = post_id
         try {
-            const result = await axios.delete(`http://localhost:3500/board/delete/${postId}`);
+            const result = await axios.delete(`http://118.67.135.87:3000/board/delete/${postId}`);
             const postResult = result.data.data.posts
             setPosts(postResult)
             const imgResult = result.data.data.imgs
